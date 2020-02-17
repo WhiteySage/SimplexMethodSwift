@@ -3,11 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0A0ACA7B23F6E60100DBF5D2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0ACA7A23F6E60100DBF5D2 /* main.swift */; };
+		0A0ACA8723F6E6CD00DBF5D2 /* Surge in Frameworks */ = {isa = PBXBuildFile; productRef = 0A0ACA8623F6E6CD00DBF5D2 /* Surge */; };
+		0A0ACA8A23F6E6FD00DBF5D2 /* Upsurge in Frameworks */ = {isa = PBXBuildFile; productRef = 0A0ACA8923F6E6FD00DBF5D2 /* Upsurge */; };
+		0A1DF41223F9B62600E8A4F0 /* LASwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0A1DF41123F9B62600E8A4F0 /* LASwift */; };
+		0A2E1BDE23FABB3100F59D16 /* SimplexMethodSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E1BDD23FABB3100F59D16 /* SimplexMethodSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,7 @@
 /* Begin PBXFileReference section */
 		0A0ACA7723F6E60100DBF5D2 /* SimplexMethodSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SimplexMethodSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A0ACA7A23F6E60100DBF5D2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0A2E1BDD23FABB3100F59D16 /* SimplexMethodSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplexMethodSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +37,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A1DF41223F9B62600E8A4F0 /* LASwift in Frameworks */,
+				0A0ACA8A23F6E6FD00DBF5D2 /* Upsurge in Frameworks */,
+				0A0ACA8723F6E6CD00DBF5D2 /* Surge in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				0A0ACA7A23F6E60100DBF5D2 /* main.swift */,
+				0A2E1BDD23FABB3100F59D16 /* SimplexMethodSwift.swift */,
 			);
 			path = SimplexMethodSwift;
 			sourceTree = "<group>";
@@ -78,6 +87,11 @@
 			dependencies = (
 			);
 			name = SimplexMethodSwift;
+			packageProductDependencies = (
+				0A0ACA8623F6E6CD00DBF5D2 /* Surge */,
+				0A0ACA8923F6E6FD00DBF5D2 /* Upsurge */,
+				0A1DF41123F9B62600E8A4F0 /* LASwift */,
+			);
 			productName = SimplexMethodSwift;
 			productReference = 0A0ACA7723F6E60100DBF5D2 /* SimplexMethodSwift */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +120,11 @@
 				Base,
 			);
 			mainGroup = 0A0ACA6E23F6E60100DBF5D2;
+			packageReferences = (
+				0A0ACA8523F6E6CD00DBF5D2 /* XCRemoteSwiftPackageReference "Surge" */,
+				0A0ACA8823F6E6FD00DBF5D2 /* XCRemoteSwiftPackageReference "Upsurge" */,
+				0A1DF41023F9B62600E8A4F0 /* XCRemoteSwiftPackageReference "LASwift" */,
+			);
 			productRefGroup = 0A0ACA7823F6E60100DBF5D2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -121,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A0ACA7B23F6E60100DBF5D2 /* main.swift in Sources */,
+				0A2E1BDE23FABB3100F59D16 /* SimplexMethodSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +300,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0A0ACA8523F6E6CD00DBF5D2 /* XCRemoteSwiftPackageReference "Surge" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Jounce/Surge.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.0;
+			};
+		};
+		0A0ACA8823F6E6FD00DBF5D2 /* XCRemoteSwiftPackageReference "Upsurge" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aleph7/Upsurge.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.11.0;
+			};
+		};
+		0A1DF41023F9B62600E8A4F0 /* XCRemoteSwiftPackageReference "LASwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexandertar/LASwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A0ACA8623F6E6CD00DBF5D2 /* Surge */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A0ACA8523F6E6CD00DBF5D2 /* XCRemoteSwiftPackageReference "Surge" */;
+			productName = Surge;
+		};
+		0A0ACA8923F6E6FD00DBF5D2 /* Upsurge */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A0ACA8823F6E6FD00DBF5D2 /* XCRemoteSwiftPackageReference "Upsurge" */;
+			productName = Upsurge;
+		};
+		0A1DF41123F9B62600E8A4F0 /* LASwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A1DF41023F9B62600E8A4F0 /* XCRemoteSwiftPackageReference "LASwift" */;
+			productName = LASwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0A0ACA6F23F6E60100DBF5D2 /* Project object */;
 }
